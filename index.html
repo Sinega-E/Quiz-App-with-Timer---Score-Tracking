@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Top bar -->
+     <div class="top-bar">
+      <div id="timer">Time Left: 15s</div>
+      <button id="toggle-theme">Toggle Dark Mode</button>
+     </div>
+
+     <!-- Quiz section -->
+      <div id="quiz-box">
+        <div id="question">Loading...</div>
+        <ul id="options"></ul>
+
+        <div id="controls">
+          <button id="prev">Previous</button>
+          <button id="next">Next</button>
+        </div>
+
+        <div id="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <!-- Result section -->
+       <div id="result-box" class="hidden">
+        <h2>Quiz Completed</h2>
+        <div id="score"></div>
+        <button id="restart-btn">Restart Quiz</button>
+       </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
